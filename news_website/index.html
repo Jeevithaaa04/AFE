@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live News Feed</title>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background: #f8fafc; margin: 0; padding: 20px; color: #0f172a; }
+        header { text-align: center; padding: 20px 0; border-bottom: 1px solid #e2e8f0; margin-bottom: 30px; }
+        #news-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .card { background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+        .card img { width: 100%; height: 180px; object-fit: cover; background: #cbd5e1; }
+        .card-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; }
+        .card-title { font-size: 18px; margin: 0 0 10px 0; font-weight: bold; }
+        .card-desc { font-size: 14px; color: #64748b; margin: 0 0 15px 0; flex-grow: 1; }
+        .card-link { color: #2563eb; text-decoration: none; font-weight: bold; font-size: 14px; }
+        .loader { text-align: center; grid-column: 1 / -1; font-size: 18px; color: #64748b; padding: 40px; }
+    </style>
+</head>
+<body>
+    <header><h1>Dynamic News Dashboard</h1></header>
+    <main id="news-container"><div class="loader">Fetching live news payload stream...</div></main>
+    <script src="app.js"></script>
+</body>
+</html>
