@@ -1,47 +1,39 @@
-# AFE Final Project Submission
+# Project 2: Hugging Face Model Card Analysis
 
-This repository contains the complete submission for all four required AFE projects.
-
----
-
-## Project 1: GitHub Setup & First Commit
-* **Status:** Completed
-* **Details:** GitHub account successfully initialized. This entire repository, along with its version history, files, and directories, represents the verified initial commits and version tracking.
-
----
-
-## Project 2: Hugging Face Model Card Analysis
-* **Selected Model:** `zai-org/GLM-5.2`
+## Chosen Model Details
+* **Model Name:** zai-org/GLM-5.2
 * **Developer:** Zhipu AI / Z.ai
-* **License:** MIT Open Source
+* **License:** MIT Open Source (Free to use anywhere)
+* **Primary Task:** Text Generation, Coding, and AI Agent tasks
 
-### Technical Specifications
+---
+
+## Technical Specifications
 * **Model Size:** 753 Billion total parameters.
-* **Context Window:** 1 Million tokens (capable of processing massive text/code streams simultaneously).
-* **Key Architecture Feature (IndexShare):** Reuses the sorting index across every four layers. This reduces processing overhead (FLOPs) by 2.9× during long-context tasks.
+* **Context Window:** 1 Million tokens (can process massive amounts of text or entire codebases at once).
+* **Key Architecture Feature (IndexShare):** It reuses its sorting index across every four layers. This makes the model run much faster, reducing processing work (FLOPs) by 2.9× when handling long text.
 
-### Training & Dataset
-* **Dataset Size:** Pre-trained on 28.5 Trillion tokens.
-* **Focus Areas:** Heavy emphasis on programming repositories, mathematics, and multi-step reasoning.
+---
 
-### Performance Benchmarks
+## Dataset & Training Details
+* **Dataset Size:** Trained on a massive dataset of 28.5 Trillion tokens of data.
+* **Focus Areas:** Heavy focus on programming code repositories, math problems, and multi-step reasoning tasks.
+
+---
+
+## Performance Benchmarks
+Here is how the model scored on major industry standard tests:
+
 * **GPQA Diamond (Hard Reasoning):** 91.2%
 * **AIME 2026 (Advanced Mathematics):** 99.2%
-* **SWE-bench Pro (Software Engineering):** 62.1%
-* **Terminal-Bench 2.1 (OS/Shell Execution):** 81.0%
+* **SWE-bench Pro (Real-world Coding):** 62.1% (fixing software bugs autonomously)
+* **Terminal-Bench 2.1 (Using Terminal/Shell):** 81.0%
 
 ---
 
-## Project 3: E-Profile Website
-* **Status:** Completed & Deployed Live
-* **Live Deployment Link:** [INSERT_YOUR_LIVE_PORTFOLIO_LINK_HERE]
-* **Code Location:** Located inside the `/e-profile` directory.
-* **Description:** A clean, responsive portfolio website showcasing professional skills, education, technical focus areas, and project links. 
-
----
-
-## Project 4: News Website
-* **Status:** Completed & Deployed Live
-* **Live Deployment Link:** [INSERT_YOUR_LIVE_NEWS_LINK_HERE]
-* **Code Location:** Located inside the `/news-website` directory.
-* **Description:** A dynamic web application that connects to a live News API endpoint. It fetches real-time news data asynchronously, parses the JSON payload, and renders the current articles dynamically on a clean user interface.
+## Supported Local Deployment Tools
+You can run this model locally using these popular frameworks:
+* vLLM
+* SGLang
+* Hugging Face Transformers
+* Unsloth
