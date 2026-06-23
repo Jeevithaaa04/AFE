@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevitha Jagadeesh // Portfolio</title>
+    <style>
+        /* Premium Cyber-Amber & Charcoal Palette */
+        :root {
+            --bg-dark: #0a0a0c;
+            --bg-card: #141417;
+            --accent-amber: #f59e0b;
+            --accent-orange: #ea580c;
+            --amber-glow: rgba(245, 158, 11, 0.12);
+            --text-white: #f3f4f6;
+            --text-dim: #9ca3af;
+            --border-line: #262626;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            line-height: 1.6;
+            padding-bottom: 5rem;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Hero Header Frame */
+        header {
+            padding: 6rem 0 3rem 0;
+            border-bottom: 1px solid var(--border-line);
+            margin-bottom: 3.5rem;
+            position: relative;
+        }
+        
+        .badge-tag {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.08);
+            color: var(--accent-amber);
+            padding: 0.35rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            margin-bottom: 1.25rem;
+        }
+
+        .profile-name {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+        .profile-name span {
+            color: var(--accent-amber);
+        }
+        
+        .profile-track {
+            font-size: 1.25rem;
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .statement {
+            max-width: 680px;
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            margin-bottom: 2rem;
+        }
+
+        /* Get in Touch Button */
+        .action-link {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--accent-amber) 0%, var(--accent-orange) 100%);
+            color: #000000;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 14px var(--amber-glow);
+            transition: all 0.2s ease;
+        }
+        .action-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.25);
+        }
+
+        /* Section Universal Setups */
+        section {
+            margin-bottom: 4.5rem;
+        }
+        
+        .section-heading {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-white);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .section-heading::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background: var(--border-line);
+        }
+
+        /* Tech Capability Showcase Layout */
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .stack-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-line);
+            border-radius: 12px;
+            padding: 1.75rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .stack-card:hover {
+            border-color: var(--accent-amber);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px var(--amber-glow);
+        }
+
+        .stack-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-white);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .stack-card h3::before {
+            content: '//';
+            color: var(--accent-amber);
+            font-weight: 800;
+        }
+
+        /* Content Pill System */
+        .pill-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .pill {
+            background: #1c1c21;
+            border: 1px solid #2e2e33;
+            color: var(--text-white);
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .stack-card p {
+            font-size: 0.95rem;
+            color: var(--text-dim);
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header Framework -->
+        <header>
+            <span class="badge-tag">Open for Collaboration</span>
+            <h1 class="profile-name">Jeevitha <span>Jagadeesh</span></h1>
+            <div class="profile-track">Computer Science & Information Technology Student</div>
+            <p class="statement">
+                Driven first-year engineer focused heavily on core programmatic logic, structured problem-solving, and clean algorithmic code execution. Actively mastering data parsing frameworks to analyze patterns and build optimized foundational structures.
+            </p>
+            <a href="mailto:your-email@example.com" class="action-link">Get In Touch &rarr;</a>
+        </header>
+
+        <!-- Skill Segment -->
+        <section>
+            <h2 class="section-heading">Technical Capabilities</h2>
+            <div class="stack-grid">
+                
+                <!-- Core Competencies -->
+                <div class="stack-card">
+                    <h3>Core Languages</h3>
+                    <p style="margin-bottom: 1rem;">Constructing syntax structures, algorithmic processes, and data validation matrices:</p>
+                    <div class="pill-box">
+                        <span class="pill">Python</span>
+                        <span class="pill">C Language</span>
+                    </div>
+                </div>
+
+                <!-- Analysis Tooling -->
+                <div class="stack-card">
+                    <h3>Data Science & ML Tools</h3>
+                    <p style="margin-bottom: 1rem;">Structuring complex datasets, array math matrices, and charting mathematical insight pipelines:</p>
+                    <div class="pill-box">
+                        <span class="pill">NumPy</span>
+                        <span class="pill">Pandas</span>
+                        <span class="pill">Matplotlib</span>
+                        <span class="pill">Seaborn</span>
+                    </div>
+                </div>
+
+                <!-- Operational Validation -->
+                <div class="stack-card">
+                    <h3>Methodology & Filtering</h3>
+                    <p>Highly focused on debugging execution bottlenecks, pattern logic processing, and parsing text string sequences:</p>
+                    <div class="pill-box" style="margin-top: 0.8rem;">
+                        <span class="pill">Regex (Regular Expressions)</span>
+                        <span class="pill">Problem Solving</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Vision Blueprint Panel -->
+        <section>
+            <h2 class="section-heading">Engineering Mindset</h2>
+            <div class="stack-grid" style="grid-template-columns: 1fr;">
+                <div class="stack-card" style="border-left: 3px solid var(--accent-amber);">
+                    <h3 style="margin-bottom: 0.5rem;">Core Objectives</h3>
+                    <p>
+                        My academic focus centers on refining foundational algorithmic paradigms, enhancing system runtime efficiency, and engineering clean datasets. I strive to break down intricate engineering issues into modular, scalable, and beautifully structured codebase configurations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
